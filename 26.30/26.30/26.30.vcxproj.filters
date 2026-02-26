@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Server">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Server\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Server\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{cecb5670-638f-4bcd-a1b2-d33ee2f4483f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\SDK">
+      <UniqueIdentifier>{f4b1e912-7669-4cb2-b1c8-438c38b27392}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="SDK\PropertyFixup.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\UnrealContainers.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\UtfN.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\IrisCore_classes.hpp">
+      <Filter>SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\IrisCore_structs.hpp">
+      <Filter>SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Runtime\Public\Runtime.h">
+      <Filter>Server\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="SDK\SDK\AscenderCodeRuntime_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Basic.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Engine_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\FortniteGame_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\TacticalSprintRuntime_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Private\Runtime.cpp">
+      <Filter>Server\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDK\NameCollisions.inl">
+      <Filter>SDK</Filter>
+    </None>
+  </ItemGroup>
+</Project>
