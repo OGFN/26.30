@@ -2,7 +2,7 @@
 
 #include "../Runtime/Public/Runtime.h"
 
-namespace FGS
+namespace OGFN
 {
 	namespace Offsets
 	{
@@ -24,11 +24,11 @@ namespace FGS
 
 	namespace Funcs
 	{
-		inline FGameplayAbilitySpecHandle(*GiveAbilityAndActivateOnce)(UAbilitySystemComponent* ASC, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec, void*) = decltype(GiveAbilityAndActivateOnce)(FGS::Offsets::GiveAbilityAndActivateOnce);
-		inline void (*ConstructAbilitySpec)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructAbilitySpec)(FGS::Offsets::ConstructAbilitySpec);
-		inline void (*InternalGiveAbility)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec) = decltype(InternalGiveAbility)(FGS::Offsets::InternalGiveAbility);
-		inline bool (*InternalTryActivateAbility)(UAbilitySystemComponent* AbilitySystemComp, FGameplayAbilitySpecHandle AbilityToActivate, FPredictionKey InPredictionKey, UGameplayAbility** OutInstancedAbility, void* OnGameplayAbilityEndedDelegate, const FGameplayEventData* TriggerEventData) = decltype(InternalTryActivateAbility)(FGS::Offsets::InternalTryActivateAbility);
-		inline ABuildingSMActor* (*ReplaceBuildingActor)(ABuildingSMActor* BuildingSMActor, unsigned int a2, UObject* a3, unsigned int a4, int a5, bool bMirrored, AFortPlayerControllerAthena* PC) = decltype(ReplaceBuildingActor)(FGS::Offsets::ReplaceBuildingActor);
-		inline __int64 (*CantBuild)(UWorld*, UObject*, FVector, FRotator, char, void*, char*) = decltype(CantBuild)(FGS::Offsets::CantBuild);
+		inline FGameplayAbilitySpecHandle(*GiveAbilityAndActivateOnce)(UAbilitySystemComponent* ASC, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec, void*) = decltype(GiveAbilityAndActivateOnce)(OGFN::Offsets::GiveAbilityAndActivateOnce);
+		inline void (*ConstructAbilitySpec)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructAbilitySpec)(OGFN::Offsets::ConstructAbilitySpec);
+		inline void (*InternalGiveAbility)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec) = decltype(InternalGiveAbility)(OGFN::Offsets::InternalGiveAbility);
+		inline bool (*InternalTryActivateAbility)(UAbilitySystemComponent* AbilitySystemComp, FGameplayAbilitySpecHandle AbilityToActivate, FPredictionKey InPredictionKey, UGameplayAbility** OutInstancedAbility, void* OnGameplayAbilityEndedDelegate, const FGameplayEventData* TriggerEventData) = decltype(InternalTryActivateAbility)(OGFN::Offsets::InternalTryActivateAbility);
+		inline ABuildingSMActor* (*ReplaceBuildingActor)(ABuildingSMActor* BuildingSMActor, unsigned int a2, UObject* a3, unsigned int a4, int a5, bool bMirrored, AFortPlayerControllerAthena* PC) = decltype(ReplaceBuildingActor)(OGFN::Offsets::ReplaceBuildingActor);
+		inline __int64 (*CantBuild)(UWorld*, UObject*, FVector, FRotator, char, void*, char*) = decltype(CantBuild)(OGFN::Offsets::CantBuild);
 	}
 }
