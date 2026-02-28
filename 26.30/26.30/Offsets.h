@@ -2,7 +2,7 @@
 
 #include "../Runtime/Public/Runtime.h"
 
-namespace FGS
+namespace OGFN
 {
 	namespace Offsets
 	{
